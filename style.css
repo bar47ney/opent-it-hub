@@ -1092,7 +1092,7 @@ button:hover {
   position: relative;
 }
 
-.event-iamge img{
+.event-iamge img {
   width: 432px;
   height: 281px;
 }
@@ -1159,13 +1159,73 @@ button:hover {
   );
 }
 
-.black-text{
+.black-text {
   color: #231f20;
 }
 
-.events-past  .block-parameters{
+.events-past .block-parameters {
   gap: 15px;
   margin-bottom: 44px;
+}
+
+/* feature-event */
+.heading-event {
+  font-family: "Montserrat SemiBold";
+  font-size: 34px;
+  line-height: 41px;
+  color: #231f20;
+  margin-top: unset;
+}
+
+.type-event-list-event {
+  margin-top: 44px;
+}
+
+.main-text-event {
+  padding-top: 44px;
+  padding-bottom: 68px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.event-button-left{
+  text-align: left;
+}
+
+.event-button{
+  width: 262px;
+  height: 72px;
+}
+
+.event-gap{
+  gap: 63px;
+}
+
+.about-specker{
+  background: #231f20;
+  color: white;
+  padding: 44px 0 0;
+}
+
+.about-specker .white-text{
+  color: white;
+}
+
+.about-specker .main-text-event{
+  padding-top: 24px;
+  padding-bottom: 106px;
+}
+
+.about-specker .block-list-events{
+  padding: unset;
+}
+
+.about-specker .event-iamge{
+  /* width: 516px; */
+}
+
+.about-specker .event-iamge img {
+  /* width: 100%; */
 }
 /* [class*="__container"]{
     max-width: 1230px;
