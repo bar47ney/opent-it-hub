@@ -165,8 +165,13 @@ rightArrow.addEventListener("click", () => {
 //reviews-slider
 const reviewsSlider = document.querySelector(".reviews-slider");
 const masReviewsSliderItems = document.querySelectorAll(".reviews-slider-item");
-const reviewsSliderArrowLeft = document.querySelector(".reviews-nav-left");
-const reviewsSliderArrowRight = document.querySelector(".reviews-nav-right");
+let reviewsSliderArrowLeft = document.querySelector(".reviews-nav-left");
+let reviewsSliderArrowRight = document.querySelector(".reviews-nav-right");
+
+if (document.documentElement.clientWidth <= 480) {
+  reviewsSliderArrowLeft = document.querySelector(".mobile-flex .reviews-nav-left");
+  reviewsSliderArrowRight = document.querySelector(".mobile-flex .reviews-nav-right");
+}
 
 const reviewsSliderStep = 100;
 let reviewsSliderPositionChange = 0;
