@@ -169,8 +169,12 @@ let reviewsSliderArrowLeft = document.querySelector(".reviews-nav-left");
 let reviewsSliderArrowRight = document.querySelector(".reviews-nav-right");
 
 if (document.documentElement.clientWidth <= 480) {
-  reviewsSliderArrowLeft = document.querySelector(".mobile-flex .reviews-nav-left");
-  reviewsSliderArrowRight = document.querySelector(".mobile-flex .reviews-nav-right");
+  reviewsSliderArrowLeft = document.querySelector(
+    ".mobile-flex .reviews-nav-left"
+  );
+  reviewsSliderArrowRight = document.querySelector(
+    ".mobile-flex .reviews-nav-right"
+  );
 }
 
 const reviewsSliderStep = 100;
@@ -222,3 +226,25 @@ reviewsSliderArrowRight.addEventListener("click", () => {
   console.log(reviewsSliderCurrentItem);
   console.log(masReviewsSliderItems.length);
 });
+
+// mobile-menu
+const subMobileItems = document.querySelector(".sub-mobile-items");
+const eventsMobileButton = document.querySelectorAll(".mobile-menu-item")[1];
+const svgMobileArrow = eventsMobileButton.querySelector("svg");
+
+eventsMobileButton.addEventListener("click", () => {
+  subMobileItems.classList.toggle("sub-mobile-items-none");
+  svgMobileArrow.classList.toggle("mobile-menu-svg-rotate");
+});
+
+const burgerMenu = document.querySelector(".burger-mobile")
+const scrollMobileMenu = document.querySelector(".scroll-mobile-menu")
+const menuExit = document.querySelector(".menu-exit")
+
+burgerMenu.addEventListener("click", () => {
+  scrollMobileMenu.classList.toggle("scroll-mobile-menu-visibility")
+})
+
+menuExit.addEventListener("click", () => {
+  scrollMobileMenu.classList.toggle("scroll-mobile-menu-visibility")
+})
