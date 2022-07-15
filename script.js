@@ -44,7 +44,26 @@ console.log(eventsSliderGrayBlockRight);
 const masEventsSliderItems = document.querySelectorAll(
   ".events-block-slider-item"
 );
-const eventsSliderStep = 554;
+let eventsSliderStep = 554;
+let grayBorder = 350;
+if (document.documentElement.clientWidth <= 480) {
+  eventsSliderStep = 206;
+  grayBorder = 99;
+}
+
+window.addEventListener("resize", () => {
+  if (document.documentElement.clientWidth <= 480) {
+    eventsSliderStep = 206;
+    grayBorder = 99;
+  }
+  if (document.documentElement.clientWidth > 480) {
+    eventsSliderStep = 554;
+    grayBorder = 350;
+  }
+  centerEventsSlider();
+  checkToGray();
+});
+
 let eventsSliderPositionChange = 0;
 const eventsSliderCenterItem = Math.round(masEventsSliderItems.length / 2);
 let eventsSliderCurrentItem = eventsSliderCenterItem;
@@ -74,7 +93,7 @@ const checkToGray = () => {
     masEventsSliderItems[0].getBoundingClientRect().left <
     eventsSliderGrayBlockLeft.getBoundingClientRect().x +
       eventsSliderGrayBlockLeft.getBoundingClientRect().width -
-      350
+      grayBorder
   ) {
     eventsSliderGrayBlockLeft.classList.add(
       "events-slider-gray-block-item-visible"
@@ -84,7 +103,7 @@ const checkToGray = () => {
     masEventsSliderItems[0].getBoundingClientRect().left >
     eventsSliderGrayBlockLeft.getBoundingClientRect().x +
       eventsSliderGrayBlockLeft.getBoundingClientRect().width -
-      350
+      grayBorder
   ) {
     eventsSliderGrayBlockLeft.classList.remove(
       "events-slider-gray-block-item-visible"
@@ -95,7 +114,7 @@ const checkToGray = () => {
     masEventsSliderItems[
       masEventsSliderItems.length - 1
     ].getBoundingClientRect().right >
-    eventsSliderGrayBlockRight.getBoundingClientRect().x + 350
+    eventsSliderGrayBlockRight.getBoundingClientRect().x + grayBorder
   ) {
     eventsSliderGrayBlockRight.classList.add(
       "events-slider-gray-block-item-visible"
@@ -105,7 +124,7 @@ const checkToGray = () => {
     masEventsSliderItems[
       masEventsSliderItems.length - 1
     ].getBoundingClientRect().right <
-    eventsSliderGrayBlockRight.getBoundingClientRect().x + 350
+    eventsSliderGrayBlockRight.getBoundingClientRect().x + grayBorder
   ) {
     eventsSliderGrayBlockRight.classList.remove(
       "events-slider-gray-block-item-visible"
