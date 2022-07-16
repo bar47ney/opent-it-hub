@@ -1915,6 +1915,50 @@ button:hover {
     gap: 9px;
     margin-bottom: 20px;
   }
+  /* .events-feature */
+  .heading-event {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: unset;
+  }
+  .type-event-list-event {
+    margin-top: 8px;
+  }
+  .main-text-event {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .event-gap {
+    gap: 8px;
+  }
+  .block-list-events-mobile-pb {
+    padding-bottom: 20px;
+  }
+  .about-specker {
+    padding-top: 0px;
+  }
+  .about-specker .events-item-info {
+    padding-top: 12px;
+    margin-left: -21px;
+  }
+  .about-specker .main-text-event {
+    padding-top: 8px;
+    padding-bottom: 42px;
+  }
+  .about-specker .event-iamge img {
+    width: 130px;
+    height: 124px;
+    position: relative;
+    right: 21px;
+  }
+  .about-specker .event-gap {
+    gap: 0px;
+  }
+  .block-video{
+    height: 169px;
+  }
 }
 /* [class*="__container"]{
     max-width: 1230px;
