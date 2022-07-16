@@ -1120,7 +1120,7 @@ button:hover {
 
 .type-event-list {
   display: flex;
-  gap: 74px;
+  gap: 50px;
   width: 110%;
 }
 
@@ -1131,6 +1131,7 @@ button:hover {
   font-size: 16px;
   line-height: 22px;
   font-family: "NotoSansDisplay-Medium";
+  width: 130px;
 }
 
 .events-item-info-name {
@@ -1874,15 +1875,18 @@ button:hover {
   .event-iamge img {
     width: 95px;
     height: 60px;
+    margin-left: -4px;
   }
   .type-event-list {
     gap: 8px;
-    justify-content: space-between;
-    width: 196px;
+    /* justify-content: space-between; */
+    /* width: 196px; */
   }
   .type-event-item {
     font-size: 4px;
     line-height: 5px;
+    width: 43px;
+    height: 12px;
   }
   .type-event-item img {
     width: 8px;
