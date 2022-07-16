@@ -1121,6 +1121,7 @@ button:hover {
 .type-event-list {
   display: flex;
   gap: 74px;
+  width: 110%;
 }
 
 .type-event-item {
@@ -1195,6 +1196,7 @@ button:hover {
 
 .type-event-list-event {
   margin-top: 44px;
+  width: 110%;
 }
 
 .main-text-event {
@@ -1398,7 +1400,7 @@ button:hover {
     top: 0;
     z-index: 5;
     overflow-y: scroll;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .scroll-mobile-menu-visibility {
@@ -1416,7 +1418,7 @@ button:hover {
     align-items: center;
     gap: 3px;
     padding-left: 17px;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .mobile-menu-item:hover {
@@ -1436,7 +1438,7 @@ button:hover {
   .mobile-menu-svg-rotate {
     transform: rotate(180deg);
   }
-  
+
   .mobile-menu-90-rotate {
     transform: rotate(90deg);
     transition: 2s;
@@ -1815,6 +1817,99 @@ button:hover {
   }
   .center-center {
     margin: 0 56px 0 47px;
+  }
+  /* events */
+  .main-slider-events {
+    height: 168px;
+    padding-top: 60px;
+  }
+
+  .main-slider-events .slider-title {
+    padding: 0 21px;
+  }
+
+  .main-slider-events p {
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: 4px;
+  }
+  .about-events {
+    height: 112px;
+    padding: 16px 27px 0;
+    word-wrap: normal;
+  }
+  .events-feature {
+    padding-top: 16px;
+  }
+  .block-parameters {
+    margin: 12px 0 20px;
+    gap: 9px;
+  }
+  .filter-item {
+    width: 68px;
+    height: 20px;
+  }
+  .filter-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .menu-parameters {
+    top: calc(100% - 0.5px);
+  }
+  .menu-parameters li {
+    height: 20px;
+    font-size: 5px;
+    line-height: 7px;
+    padding-left: 5px;
+  }
+  .block-list-events {
+    gap: 16px;
+    padding: 0 0 24px 10px;
+    /* align-items: unset; */
+  }
+  .block-list-events-item {
+    gap: 9px;
+    width: 300px;
+  }
+  .event-iamge img {
+    width: 95px;
+    height: 60px;
+  }
+  .type-event-list {
+    gap: 8px;
+    justify-content: space-between;
+    width: 196px;
+  }
+  .type-event-item {
+    font-size: 4px;
+    line-height: 5px;
+  }
+  .type-event-item img {
+    width: 8px;
+  }
+  .events-item-info-name {
+    font-size: 7px;
+    line-height: 9px;
+    margin-top: 12px;
+  }
+  .events-item-info-preview {
+    font-size: 6px;
+    line-height: 7px;
+    padding: 4px 0 16px;
+  }
+  .events-buttons {
+    gap: 8px;
+  }
+  .events-buttons button {
+    margin: unset;
+    width: 94px;
+    height: 20px;
+    font-size: 8px;
+    line-height: 11px;
+  }
+  .events-past .block-parameters {
+    gap: 9px;
+    margin-bottom: 20px;
   }
 }
 /* [class*="__container"]{

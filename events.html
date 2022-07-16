@@ -10,7 +10,52 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header mobily-visibility">
+
+            <div class="burger-mobile"><img src="img/Mobile-Menu.svg" alt="logo"></div>
+            <div class="header-logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class=""><button class="orange-button orange-button-hover">Арендовать</button></div>
+            <div class="scroll-mobile-menu">
+                <div class="menu-exit">
+                    <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #8d8d8d;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g id="cross">
+                            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-item">Услуги</div>
+                    <div class="mobile-menu-item">Мероприятия<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 11L11.8571 13L9 11" stroke="#8D8D8D" />
+                        </svg></div>
+                    <div class="sub-mobile-items sub-mobile-items-none">
+                        <div class="mobile-menu-item sub-mobile-item">Ближайшие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Все будущие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Все прошедшие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Регистрация</div>
+                    </div>
+                    <div class="mobile-menu-item">Отзывы</div>
+                    <div class="mobile-menu-item">Контакты</div>
+                </div>
+            </div>
+
+        </header>
+
+        <header class="header desktop-visibility">
 
             <div class="header-item">
                 <div class="menu-item">Услуги</div>
@@ -32,9 +77,8 @@
             <div class="header-item">
                 <div class="menu-item">Отзывы</div>
                 <div class="menu-item">Контакты</div>
-                <div class=""><button class="orange-button orange-button-hover"> Арендовать</button></div>
+                <div class=""><button class="orange-button orange-button-hover">Арендовать</button></div>
             </div>
-
         </header>
 
 
@@ -49,8 +93,12 @@
             </div>
             <div class="book-block about-events">
                 <h3 class="advantage-block-header white-text">Какие мероприятия мы проводим?</h3>
-                <p class="white-text ">В нашем хабе на постоянной основе проводятся обучающие мероприятия и
+                <p class="white-text desktop-visibility">В нашем хабе на постоянной основе проводятся обучающие мероприятия и
                     ивенты<br />самой разной тематики. В качестве спикеров выступают эксперты высшего
+                    класса.<br /><br />Вы можете ознакомиться с полным списком как будущих,<br />так и прошедших
+                    мероприятий.</p>
+                <p class="white-text mobile-visibility">В нашем хабе на постоянной основе проводятся обучающие мероприятия и
+                    ивенты самой разной тематики. В качестве спикеров выступают эксперты высшего
                     класса.<br /><br />Вы можете ознакомиться с полным списком как будущих,<br />так и прошедших
                     мероприятий.</p>
             </div>
@@ -309,10 +357,10 @@
                                     <p>18:26</p>
                                 </div>
                                 <div class="type-event-item"><img src="img/events-feature/price-price.svg" alt="">
-                                    <p>бесплатно</p>
+                                    <p>бесплатное</p>
                                 </div>
                                 <div class="type-event-item"><img src="img/events-feature/info.svg" alt="">
-                                    <p>онлайн</p>
+                                    <p>очно/онлайн</p>
                                 </div>
                             </div>
                             <p class="events-item-info-name black-text">Good idea, или как начать<br />
@@ -389,7 +437,7 @@
 
 
         <footer class="footer">
-            <div class="footer-item footer-item-l">
+            <div class="footer-item footer-item-l desktop-visibility">
                 <p class="footer-first-head">Мы рядом</p>
                 <p class="footer-second-head">ул. Скрыганова, 14Б<br />
                     Минск</p>
@@ -407,7 +455,30 @@
                     <div class="social-item"><a href="https://www.linkedin.com/company/86587433/" title=""
                             target="_blank"><img src="img/linken.svg" /></a></div>
                 </div>
-                <div class="footer-info">
+
+                <div class="footer-info mobile-visibility mobile-footer-flex">
+
+                    <div>
+                        <p class="footer-first-head">Мы рядом</p>
+                        <p class="footer-second-head">ул. Скрыганова, 14Б<br />
+                            Минск</p>
+                    </div>
+                    <div class="center-center">
+                        <h6>OPEN IT ХАБ</h6>
+                        <p class="footer-second-info">openithub@info.com
+                            <br />+375 29 456 78 23
+                        </p>
+                        <p class="copyright">© 2022 OPEN IT ХАБ. All rights reserved</p>
+                    </div>
+                    <div>
+                        <p class="footer-first-head">Мы работаем</p>
+                        <p class="footer-second-head">10.00 - 20.00<br />
+                            пн-пт</p>
+                    </div>
+                </div>
+
+
+                <div class="footer-info desktop-visibility">
                     <h6>OPEN IT ХАБ</h6>
                     <p class="footer-second-info">openithub@info.com
                         <br />+375 29 456 78 23
@@ -415,13 +486,14 @@
                     <p class="copyright">© 2022 OPEN IT ХАБ. All rights reserved</p>
                 </div>
             </div>
-            <div class="footer-item footer-item-r">
+            <div class="footer-item footer-item-r desktop-visibility">
                 <p class="footer-first-head">Мы работаем</p>
                 <p class="footer-second-head">10.00 - 20.00<br />
                     пн-пт</p>
             </div>
         </footer>
     </div>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
