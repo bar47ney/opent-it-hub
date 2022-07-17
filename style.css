@@ -51,6 +51,10 @@
   font-family: "Montserrat-ExtraBold";
   src: url("fonts/Montserrat-ExtraBold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
 
 *,
 *::before,
@@ -1425,6 +1429,7 @@ button:hover {
 }
 .form-events label {
   width: unset;
+  font-family: "Roboto-Regular";
 }
 .events-filter-block {
   margin-top: 9px;
@@ -1432,6 +1437,7 @@ button:hover {
   gap: 44px;
 }
 .events-filter-block-item select {
+  display: block;
   width: 144px;
   height: 32px;
   font-family: "NotoSansDisplay-Medium";
@@ -1439,6 +1445,75 @@ button:hover {
   line-height: 22px;
   color: #8d8d8d;
 }
+.events-filter-block-item {
+  width: 144px;
+  height: 32px;
+  font-family: "NotoSansDisplay-Medium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #8d8d8d;
+  position: relative;
+}
+.events-filter-block-item-active {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #231f20;
+  padding-left: 7px;
+  color: #8d8d8d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.events-filter-block-item-active svg {
+  transition: 0.3s;
+}
+.events-filter-block-item-default {
+  padding-left: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.events-filter-block-items {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.events-filter-block-item-default:hover {
+  color: #231f20;
+  background: linear-gradient(
+    270.5deg,
+    rgba(131, 131, 151, 0.3498) -2.81%,
+    rgba(85, 85, 100, 0.2442) 47.07%,
+    rgba(85, 85, 100, 0) 99.23%
+  );
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-arrow-default {
+  transform: rotate(180deg);
+}
+.form-arrow-default path {
+  stroke: #b2b2b2;
+}
+.block-visible {
+  display: block;
+}
+.form-black-text {
+  color: black;
+}
+.roboto-text{
+  font-family: "Roboto-Regular";
+}
+/* .events-filter-block-item select{
+  width: 100%;
+  height: 100%;
+}.events-filter-block-item option{
+  width: 100%;
+  height: 100%;
+} */
 /* .events-filter-block-item .option .select{
   width: 144px;
   height: 32px !important;
