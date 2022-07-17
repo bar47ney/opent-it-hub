@@ -270,9 +270,8 @@ for (let i = 0; i < masEventsFilterBlock.length; i++) {
     console.log(masEventsFilterBlockItemDefault.length);
     for (let j = 0; j < masEventsFilterBlockItemDefault.length; j++) {
       masEventsFilterBlockItemDefault[j].addEventListener("click", () => {
-        masEventsFilterBlock[i].querySelector(
-          "span"
-        ).innerText = masEventsFilterBlockItemDefault[j].innerText;
+        masEventsFilterBlock[i].querySelector("span").innerText =
+          masEventsFilterBlockItemDefault[j].innerText;
         masEventsFilterBlockItems[i].classList.remove("block-visible");
         masEventsFilterBlock[i].classList.remove("form-black-text");
         masEventsFilterBlock[i]
@@ -280,5 +279,11 @@ for (let i = 0; i < masEventsFilterBlock.length; i++) {
           .classList.add("form-arrow-default");
       });
     }
+  });
+}
+const masCurrentEvents = document.querySelectorAll(".current-event");
+for (let k = 0; k < masCurrentEvents.length; k++) {
+  masCurrentEvents[k].addEventListener("click", () => {
+    masCurrentEvents[k].classList.toggle("current-event-active");
   });
 }

@@ -1424,7 +1424,7 @@ button:hover {
 }
 .form-events {
   height: unset;
-  padding: 23px 0 22px 13px;
+  padding: 23px 0 25px 13px;
   border: unset;
 }
 .form-events label {
@@ -1504,8 +1504,63 @@ button:hover {
 .form-black-text {
   color: black;
 }
-.roboto-text{
+.roboto-text {
   font-family: "Roboto-Regular";
+}
+.block-finded-events {
+  border: none;
+  height: unset;
+  flex-direction: column;
+  justify-content: start;
+  align-items: unset;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+.block-finded-events-item .event-name {
+  font-family: "Roboto-Regular";
+  font-size: 20px;
+  line-height: 123.6%;
+  color: #8d8d8d;
+  margin: unset;
+}
+.block-finded-events-item {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.current-event {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #eaeaea;
+}
+.current-event:hover {
+  cursor: pointer;
+  border: 1px solid orange;
+}
+.current-event-active {
+  background: linear-gradient(
+    126.93deg,
+    #f15a29 19.71%,
+    #ef6224 32.63%,
+    #e87917 64.24%,
+    #e67f13 88.66%
+  );
+}
+.format-choose {
+  height: unset;
+  border: unset;
+  display: block;
+}
+.format-choose label {
+  font-family: "Roboto-Regular";
+  width: unset;
+}
+.format-choose-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 24px;
 }
 /* .events-filter-block-item select{
   width: 100%;
