@@ -533,11 +533,11 @@ body {
   font-family: "NotoSansDisplay-Medium";
 }
 
-input[type="text"]::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: #d5d5d5;
 }
 
-input[type="text"]::-moz-placeholder {
+input::-moz-placeholder {
   color: #d5d5d5;
 }
 
@@ -1386,12 +1386,14 @@ button:hover {
   width: 612px;
   height: 71px;
   margin: 0 auto;
+  padding-left: 13px;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #f6f2f2;
 }
-.form-item label, .form-item input{
+.form-item label,
+.form-item input {
   font-family: "NotoSansDisplay-Medium";
   font-size: 20px;
   line-height: 123.6%;
@@ -1401,15 +1403,46 @@ button:hover {
 .form-item input:focus-visible {
   outline: none;
 }
-.form-item input{
+.form-item input {
   color: #231f20;
   width: unset;
 }
-.form-item:nth-child(3) label{
+.form-item:nth-child(3) label {
   display: flex;
   align-items: center;
   gap: 19px;
 }
+.form-item:nth-child(6) label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 255px;
+}
+.form-events {
+  height: unset;
+  padding: 23px 0 22px 13px;
+  border: unset;
+}
+.form-events label {
+  width: unset;
+}
+.events-filter-block {
+  margin-top: 9px;
+  display: flex;
+  gap: 44px;
+}
+.events-filter-block-item select {
+  width: 144px;
+  height: 32px;
+  font-family: "NotoSansDisplay-Medium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #8d8d8d;
+}
+/* .events-filter-block-item .option .select{
+  width: 144px;
+  height: 32px !important;
+} */
 /* adaptiv */
 @media (max-width: 480px) {
   /* header */
