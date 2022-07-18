@@ -13,8 +13,9 @@
         <header class="header mobily-visibility">
 
             <div class="burger-mobile"><img src="img/Mobile-Menu.svg" alt="logo"></div>
-            <div class="header-logo"><img src="img/logo.svg" alt="logo"></div>
-            <div class=""><button class="orange-button orange-button-hover">Арендовать</button></div>
+            <div class="header-logo"><a href="/"><img src="img/logo.svg" alt="logo"></a></div>
+            <div class=""><button class="orange-button orange-button-hover"><a
+                href="rent.html">Арендовать</a></button></div>
             <div class="scroll-mobile-menu">
                 <div class="menu-exit">
                     <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -37,19 +38,19 @@
                     </svg>
                 </div>
                 <div class="mobile-menu">
-                    <div class="mobile-menu-item">Услуги</div>
+                    <div class="mobile-menu-item"><a href="index.html#services-block">Услуги</a></div>
                     <div class="mobile-menu-item">Мероприятия<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 11L11.8571 13L9 11" stroke="#8D8D8D" />
                         </svg></div>
                     <div class="sub-mobile-items sub-mobile-items-none">
-                        <div class="mobile-menu-item sub-mobile-item">Ближайшие</div>
-                        <div class="mobile-menu-item sub-mobile-item">Все будущие</div>
-                        <div class="mobile-menu-item sub-mobile-item">Все прошедшие</div>
-                        <div class="mobile-menu-item sub-mobile-item">Регистрация</div>
+                        <div class="mobile-menu-item sub-mobile-item"><a href="index.html#events-block">Ближайшие</a></div>
+                        <div class="mobile-menu-item sub-mobile-item"><a href="events.html#events-feature">Все будущие</a></div>
+                        <div class="mobile-menu-item sub-mobile-item"><a href="events.html#events-past">Все прошедшие</a></div>
+                        <div class="mobile-menu-item sub-mobile-item"><a href="form-page.html">Регистрация</a></div>
                     </div>
-                    <div class="mobile-menu-item">Отзывы</div>
-                    <div class="mobile-menu-item">Контакты</div>
+                    <div class="mobile-menu-item"><a href="index.html#reviews">Отзывы</a></div>
+                    <div class="mobile-menu-item"><a href="index.html#contacts-block">Контакты</a></div>
                 </div>
             </div>
 
@@ -66,9 +67,9 @@
                     <div class="sub-menu">
                         <ul>
                             <li><a href="index.html#events-block">Ближайшие</a></li>
-                            <li>Все будущие</li>
-                            <li>Все прошедшие</li>
-                            <li>Регистрация</li>
+                            <li><a href="events.html#events-feature">Все будущие</a></li>
+                            <li><a href="events.html#events-past">Все прошедшие</a></li>
+                            <li><a href="form-page.html">Регистрация</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                 </div>
                 <div class="slider-shadow"></div>
             </div>
-            <div class="book-block about-events">
+            <div id="events-feature" class="book-block about-events">
                 <h3 class="advantage-block-header white-text">Какие мероприятия мы проводим?</h3>
                 <p class="white-text desktop-visibility">В нашем хабе на постоянной основе проводятся обучающие
                     мероприятия и
@@ -106,7 +107,7 @@
                     мероприятий.</p>
             </div>
 
-            <div class="events-feature">
+            <div  class="events-feature">
                 <h3 class="advantage-block-header">Будущие мероприятия</h3>
                 <div class="block-parameters">
                     <div class="block-parameters-item">
@@ -167,7 +168,7 @@
                                 построения</p>
                             <p class="events-item-info-preview">Чтобы сочетать в себе сильные качества<br />и быть
                                 замотивированным, нужно...</p>
-                            <div class="events-buttons">
+                            <div id="events-past" class="events-buttons">
                                 <button class="btn-slider margin-none btn-black orange-button-hover"><a
                                         href="form-page.html">Регистрация</a></button>
                                 <button class="more-info-event"><a href="event-1.html">О мероприятии</a></button>

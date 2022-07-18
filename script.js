@@ -248,3 +248,12 @@ burgerMenu.addEventListener("click", () => {
 menuExit.addEventListener("click", () => {
   scrollMobileMenu.classList.toggle("scroll-mobile-menu-visibility");
 });
+
+///
+const masEventsMobileButton = document.querySelectorAll(".mobile-menu-item a");
+for (item of masEventsMobileButton) {
+  // let linkItem = item.querySelector("a")
+  item.addEventListener("click", () => {
+    scrollMobileMenu.classList.toggle("scroll-mobile-menu-visibility");
+  });
+}
