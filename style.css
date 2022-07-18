@@ -1551,16 +1551,63 @@ button:hover {
   height: unset;
   border: unset;
   display: block;
+  padding-bottom: 60px;
 }
 .format-choose label {
   font-family: "Roboto-Regular";
   width: unset;
 }
-.format-choose-flex{
+.format-choose-flex {
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding-top: 24px;
+}
+.about-ochno {
+  position: relative;
+  font-size: 16px;
+  line-height: 123.6%;
+  color: #8d8d8d;
+  margin-top: 24px;
+}
+.about-ochno::after {
+  position: absolute;
+  bottom: -4.51px;
+  left: 0;
+  content: "";
+  width: 612px;
+  height: 1px;
+  background-color: #f7f2f2;
+}
+.about-ochno::before {
+  position: absolute;
+  bottom: -18.93px;
+  left: 0;
+  content: "";
+  width: 612px;
+  height: 1px;
+  background-color: #f7f2f2;
+}
+.agree-data{
+  padding-bottom: 40px;
+}
+.agree-data .current-event {
+  border-radius: unset;
+}
+.agree-data .event-name {
+  font-size: 18px;
+  line-height: 123.6%;
+}
+.agree-data .format-choose-flex{
+  padding-top: unset;
+}
+.agree-data .block-finded-events-item{
+  gap: 18px;
+}
+.button-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* .events-filter-block-item select{
   width: 100%;

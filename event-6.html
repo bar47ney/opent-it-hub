@@ -10,17 +10,62 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header mobily-visibility">
+
+            <div class="burger-mobile"><img src="img/Mobile-Menu.svg" alt="logo"></div>
+            <div class="header-logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class=""><button class="orange-button orange-button-hover">Арендовать</button></div>
+            <div class="scroll-mobile-menu">
+                <div class="menu-exit">
+                    <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: #8d8d8d;
+                                    stroke-linecap: round;
+                                    stroke-linejoin: round;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <g id="cross">
+                            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+                            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-item">Услуги</div>
+                    <div class="mobile-menu-item">Мероприятия<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 11L11.8571 13L9 11" stroke="#8D8D8D" />
+                        </svg></div>
+                    <div class="sub-mobile-items sub-mobile-items-none">
+                        <div class="mobile-menu-item sub-mobile-item">Ближайшие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Все будущие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Все прошедшие</div>
+                        <div class="mobile-menu-item sub-mobile-item">Регистрация</div>
+                    </div>
+                    <div class="mobile-menu-item">Отзывы</div>
+                    <div class="mobile-menu-item">Контакты</div>
+                </div>
+            </div>
+
+        </header>
+
+        <header class="header desktop-visibility">
 
             <div class="header-item">
-                <div class="menu-item">Услуги</div>
-                <div class="menu-item">Преимущества</div>
-                <div class="menu-item">Мероприятия
+                <div class="menu-item"><a href="index.html#services-block">Услуги</a></div>
+                <div class="menu-item"><a href="index.html#advantage-block">Преимущества</a></div>
+                <div class="menu-item"><a href="events.html">Мероприятия</a>
                     <div class="arrow-default"></div>
                     <div class="arrow-hover"></div>
                     <div class="sub-menu">
                         <ul>
-                            <li>Ближайшие</li>
+                            <li><a href="index.html#events-block">Ближайшие</a></li>
                             <li>Все будущие</li>
                             <li>Все прошедшие</li>
                             <li>Регистрация</li>
@@ -28,13 +73,12 @@
                     </div>
                 </div>
             </div>
-            <div class="header-logo"><img src="img/logo.svg" alt="logo"></div>
+            <div class="header-logo"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
             <div class="header-item">
-                <div class="menu-item">Отзывы</div>
-                <div class="menu-item">Контакты</div>
-                <div class=""><button class="orange-button orange-button-hover"> Арендовать</button></div>
+                <div class="menu-item"><a href="index.html#reviews">Отзывы</a></div>
+                <div class="menu-item"><a href="index.html#contacts-block">Контакты</a></div>
+                <div class=""><button class="orange-button orange-button-hover"><a href="rent.html">Арендовать</a></button></div>
             </div>
-
         </header>
 
 
@@ -153,6 +197,7 @@
             </div>
         </footer>
     </div>
+    <script src="menu-mobile.js"></script>
 </body>
 
 </html>
