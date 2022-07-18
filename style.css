@@ -1588,7 +1588,7 @@ button:hover {
   height: 1px;
   background-color: #f7f2f2;
 }
-.agree-data{
+.agree-data {
   padding-bottom: 40px;
 }
 .agree-data .current-event {
@@ -1598,13 +1598,13 @@ button:hover {
   font-size: 18px;
   line-height: 123.6%;
 }
-.agree-data .format-choose-flex{
+.agree-data .format-choose-flex {
   padding-top: unset;
 }
-.agree-data .block-finded-events-item{
+.agree-data .block-finded-events-item {
   gap: 18px;
 }
-.button-form{
+.button-form {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2224,6 +2224,52 @@ button:hover {
   }
   .block-video {
     height: 169px;
+  }
+  /* .corporat-job */
+  .corporat-job {
+    padding-top: 0;
+  }
+  .corporat-job .main-slider-events {
+    padding-top: 45px;
+  }
+  .corporat-job .btn-slider-bottom {
+    bottom: 32px;
+  }
+
+  .corporat-job .slider-title {
+    padding: 0 64px;
+  }
+  .corporat-job .about-events {
+    height: unset;
+    padding: 16px 34px 18px;
+  }
+  /* .rent-page */
+  .rent-page .what-we-list {
+    margin-top: 8px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .rent-page .what-we-list li:before {
+    height: 1.25px;
+    width: 1.25px;
+    margin-right: 6px;
+  }
+  .rent-page .price-rent {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 16px;
+  }
+  .rent-page .price-nds {
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: 0;
+  }
+  .rent-page .about-events {
+    padding-bottom: 23px;
+  }
+  .rent-page .advantage-block {
+    padding: 19px 0 26px;
+    height: unset;
   }
 }
 /* [class*="__container"]{
