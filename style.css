@@ -99,8 +99,10 @@ body {
   font-family: "Noto Sans";
   font-size: 18px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0px 119px 0px 122px;
+  /* gap: 59px; */
+  padding: 0;
   position: relative;
 
   /* header fixed */
@@ -111,15 +113,21 @@ body {
 }
 
 .header-logo {
-  margin: 0 auto;
+  /* width: 20%; */
+  margin: 0 59px;
 }
 
 .header-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 447px;
+  /* width: 447px; */
+  gap: 55px;
+  width: 40%;
   height: 100%;
+}
+.header-item:nth-child(1) {
+  justify-content: end;
 }
 
 .orange-button {
@@ -177,12 +185,12 @@ body {
   cursor: pointer;
 }
 
-.menu-item:nth-child(3):hover .arrow-hover {
+.menu-item:nth-child(4):hover .arrow-hover {
   opacity: 1;
   transition: 0.3s;
 }
 
-.menu-item:nth-child(3):hover .sub-menu {
+.menu-item:nth-child(4):hover .sub-menu {
   display: block;
 }
 
@@ -1112,6 +1120,15 @@ button:hover {
   position: relative;
 }
 
+.block-list-events-item::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -17px;
+  background-color: #8d8d8d;
+}
+
 .event-iamge img {
   width: 432px;
   height: 281px;
@@ -1136,6 +1153,13 @@ button:hover {
   line-height: 22px;
   font-family: "NotoSansDisplay-Medium";
   width: 130px;
+}
+.events-item-info{
+  
+display: flex;
+flex-direction: column;
+justify-content: end;
+padding-bottom: 3px;
 }
 
 .events-item-info-name {
@@ -1210,6 +1234,9 @@ button:hover {
   font-size: 21px;
   line-height: 26px;
 }
+.main-text-event ul {
+  margin-left: 23px;
+}
 
 .event-button-left {
   text-align: left;
@@ -1228,6 +1255,9 @@ button:hover {
   background: #231f20;
   color: white;
   padding: 0;
+}
+.about-specker .event-gap{
+  align-items: center;
 }
 
 .about-specker .white-text {
